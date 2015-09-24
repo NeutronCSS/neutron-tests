@@ -1,0 +1,35 @@
+@import "../../neutroncss/neutron";
+
+/* Media examples
+-----------------------------*/
+
+body {
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	float: left;
+	clear: left;
+} 
+
+#onclick {
+	display: block;
+	clear: both;
+}
+
+[class^='target-'] {
+    line-height: 16px;
+	font-size: 16px;
+}
+
+.media-1 {
+	@include columns(4) {
+		outline: 1px solid red;
+	};
+	
+	@include breakpoint('from-tablet', "-webkit-min-device-pixel-ratio: 2") {
+		@include columns(2);
+	}	
+}
