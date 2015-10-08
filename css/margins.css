@@ -2,12 +2,10 @@
            NeutronCSS
 ---------------------------------*/
 html {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html * {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 

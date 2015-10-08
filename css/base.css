@@ -1,0 +1,134 @@
+/*---------------------------------
+           NeutronCSS
+---------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------- End of NeutronCSS ---------*/
+body {
+  margin-bottom: 24px;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  float: left;
+  clear: left;
+}
+
+.example-1 {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  margin-right: 0;
+}
+.example-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-1 > *:nth-child(3n+1) {
+  width: calc(16.66667% - 5px - 5px + 1.66667px + 1.66667px);
+  float: left;
+  outline: 1px solid red;
+  margin: 5px;
+  clear: left;
+  margin-left: 0;
+}
+.example-1 > *:nth-child(3n+2) {
+  width: calc(41.66667% - 5px - 5px + 1.66667px + 1.66667px);
+  float: left;
+  outline: 1px solid red;
+  margin: 5px;
+  clear: none;
+}
+.example-1 > *:nth-child(3n+3) {
+  width: calc(41.66667% - 5px - 5px + 1.66667px + 1.66667px);
+  float: left;
+  outline: 1px solid red;
+  margin: 5px;
+  clear: none;
+  margin-right: 0;
+}
+
+.example-2 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.example-2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-2 > *:nth-child(3n+1) {
+  width: calc(16.66667%);
+  float: left;
+  outline: 1px solid red;
+  clear: left;
+  margin-left: 0;
+}
+.example-2 > *:nth-child(3n+2) {
+  width: calc(41.66667%);
+  float: left;
+  outline: 1px solid red;
+  clear: none;
+}
+.example-2 > *:nth-child(3n+3) {
+  width: calc(41.66667%);
+  float: left;
+  outline: 1px solid red;
+  clear: none;
+  margin-right: 0;
+}
+.example-2 > *:nth-child(3n+2) {
+  left: calc(0px - ((0px + (16.66667%) + (41.66667%))) + (0px + (41.66667%)));
+  position: relative;
+}
+.example-2 > *:nth-child(3n+1) {
+  left: calc(0px - ((0px + (16.66667%))) + (0px + (41.66667%) + (16.66667%)));
+  position: relative;
+}
+.example-2 > *:nth-child(3n+3) {
+  left: calc(0px - ((0px + (16.66667%) + (41.66667%) + (41.66667%))) + (0px + (41.66667%) + (16.66667%) + (41.66667%)));
+  position: relative;
+}
+
+.example-3 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.example-3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.example-3 > div:nth-of-type(2n+1) {
+  width: calc(28.57143%);
+  float: left;
+  outline: 1px solid red;
+  clear: left;
+  margin-left: 0;
+}
+.example-3 > div:nth-of-type(2n+2) {
+  width: calc(71.42857%);
+  float: left;
+  outline: 1px solid red;
+  clear: none;
+  margin-right: 0;
+}

@@ -1,0 +1,20 @@
+@import "../../neutroncss/neutron";
+@import "general";
+
+.example-1 {
+	@include columns((2,5,5), $margin: 5px, $container-width: 60%, $container-align: right) {
+		outline: 1px solid red;
+	};
+}
+
+.example-2 {
+	@include column((2,5,5), $order: (2,1,3)) {
+		outline: 1px solid red;
+	};
+}
+
+.example-3 {
+	@include col((2,5), $target: "div") {
+		outline: 1px solid red;
+	};
+}

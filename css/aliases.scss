@@ -2,7 +2,7 @@
 @import "general";
 
 .alias-1 {
-	@include columns((2,5,5)) {
+	@include columns((2,5,5), $margin: 5px) {
 		outline: 1px solid red;
 	};
 }
