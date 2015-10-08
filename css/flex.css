@@ -135,6 +135,9 @@ h2 {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -148,7 +151,73 @@ h2 {
   display: table;
   clear: both;
 }
-.flex-3 > div:nth-of-type(2n+1) {
+.flex-3 > *:nth-child(3n+1) {
+  width: calc(22.22222%);
+  float: left;
+  outline: 1px solid red;
+  clear: left;
+  margin-left: 0;
+}
+.flex-3 > *:nth-child(3n+2) {
+  width: calc(22.22222%);
+  float: left;
+  outline: 1px solid red;
+  clear: none;
+}
+.flex-3 > *:nth-child(3n+3) {
+  width: calc(55.55556%);
+  float: left;
+  outline: 1px solid red;
+  clear: none;
+  margin-right: 0;
+}
+.flex-3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.flex-3 > *:nth-child(3n+1) {
+  -webkit-flex: calc(22.22222% - 0px) 2;
+  -ms-flex: calc(22.22222% - 0px) 2;
+  flex: calc(22.22222% - 0px) 2;
+  outline: 1px solid red;
+  clear: left;
+  margin-left: 0;
+}
+.flex-3 > *:nth-child(3n+2) {
+  -webkit-flex: calc(22.22222% - 0px) 2;
+  -ms-flex: calc(22.22222% - 0px) 2;
+  flex: calc(22.22222% - 0px) 2;
+  outline: 1px solid red;
+  clear: none;
+}
+.flex-3 > *:nth-child(3n+3) {
+  -webkit-flex: calc(55.55556% - 0px) 5;
+  -ms-flex: calc(55.55556% - 0px) 5;
+  flex: calc(55.55556% - 0px) 5;
+  outline: 1px solid red;
+  clear: none;
+  margin-right: 0;
+}
+
+.flex-4 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  clear: left;
+}
+.flex-4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.flex-4 > div:nth-of-type(2n+1) {
   -webkit-flex: calc(28.57143% - 0px) 2;
   -ms-flex: calc(28.57143% - 0px) 2;
   flex: calc(28.57143% - 0px) 2;
@@ -156,7 +225,7 @@ h2 {
   clear: left;
   margin-left: 0;
 }
-.flex-3 > div:nth-of-type(2n+2) {
+.flex-4 > div:nth-of-type(2n+2) {
   -webkit-flex: calc(71.42857% - 0px) 5;
   -ms-flex: calc(71.42857% - 0px) 5;
   flex: calc(71.42857% - 0px) 5;
