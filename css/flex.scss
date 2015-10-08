@@ -1,0 +1,40 @@
+@import "../../neutroncss/neutron";
+@import "general";
+
+.flex-1 {
+	@include flex-columns((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.flex-2 {
+	@include flex-column((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.flex-3 {
+	@include flex-col((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+
+
+// .flex-4 {
+// 	@include flex-columns((2,5,5)) {
+// 		outline: 1px solid red;
+// 	};
+// }
+
+// .flex-5 {
+// 	@include flex-columns((2,5,5)) {
+// 		outline: 1px solid red;
+// 	};
+// }
+
+// .flex-6 {
+// 	@include flex-columns((2,5,5)) {
+// 		outline: 1px solid red;
+// 	};
+// }
