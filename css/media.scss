@@ -25,11 +25,11 @@ h2 {
 }
 
 .media-1 {
-	@include columns(4) {
+	@include columns(2) {
 		outline: 1px solid red;
 	};
 	
-	@include breakpoint('from-tablet', "-webkit-min-device-pixel-ratio: 2") {
-		@include columns(2);
+	@include breakpoint('from-tablet') {
+		@include columns(4);
 	}	
 }

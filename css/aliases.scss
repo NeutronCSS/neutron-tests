@@ -1,0 +1,38 @@
+@import "../../neutroncss/neutron";
+@import "general";
+
+.alias-1 {
+	@include columns((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.alias-2 {
+	@include column((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.alias-3 {
+	@include col((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.alias-4 {
+	@include float-columns((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.alias-5 {
+	@include float-column((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
+
+.alias-6 {
+	@include float-col((2,5,5)) {
+		outline: 1px solid red;
+	};
+}
