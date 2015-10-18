@@ -12,7 +12,7 @@ h2 {
 	margin-bottom: 10px;
 	float: left;
 	clear: left;
-} 
+}
 
 #onclick {
 	display: block;
@@ -28,8 +28,33 @@ h2 {
 	@include columns(2) {
 		outline: 1px solid red;
 	};
-	
+
 	@include breakpoint('from-tablet') {
 		@include columns(4);
-	}	
+	}
+}
+
+.media-2 {
+	@include columns(2) {
+		outline: 1px solid red;
+	};
+
+	@include breakpoint('from-tablet') {
+		@include columns(4);
+	}
+		@include breakpoint($additional-queries: "min-width: 1000px")  {
+			outline: 1px solid green;
+			background: green;
+		}
+}
+
+.media-3 {
+	@include columns(2) {
+		outline: 1px solid red;
+	};
+
+	@include breakpoint($resolution: 2)  {
+		outline: 1px solid orange;
+		background: orange;
+	}
 }
